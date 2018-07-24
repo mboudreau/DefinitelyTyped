@@ -42,7 +42,7 @@ declare namespace Dropzone {
 	}
 
 	export interface DropzoneOptions {
-		url?: string;
+		url?: (files: DropzoneFile[]) => string | string;
 		method?: string;
 		withCredentials?: boolean;
 		timeout?: number;
